@@ -162,3 +162,31 @@ import Badge from '@/components/Badge'
 2. **文件组织**: 每个组件一个文件，导出默认组件
 3. **样式优先**: 使用 Tailwind 类名，避免内联样式
 4. **动画克制**: 仅在关键时刻使用动画，避免过度使用
+
+## 部署
+
+### GitHub Pages 自动部署
+
+项目已配置 GitHub Actions，推送到 `main` 分支后自动部署。
+
+**部署地址**: https://ashwinyue.github.io/next-admin/
+
+### 工作流程
+
+1. 修改代码后提交到 `main` 分支
+2. GitHub Actions 自动触发构建
+3. 构建完成后自动部署到 GitHub Pages
+
+### 本地构建预览
+
+```bash
+npm run build
+npm run preview
+```
+
+### 手动部署
+
+```bash
+npm run build
+# 将 dist/ 目录内容上传到静态服务器
+```
