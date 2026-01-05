@@ -2,6 +2,58 @@
 
 基于 React + Vite 构建的现代化前端管理系统，采用工业实用主义设计风格。
 
+![Demo](https://img.shields.io/badge/demo-live-success)
+![React](https://img.shields.io/badge/React-18.3-cyan)
+![Vite](https://img.shields.io/badge/Vite-5.2-purple)
+
+## 🖼️ 在线预览
+
+**部署地址**: https://ashwinyue.github.io/next-admin/
+
+## ✨ 特性
+
+- 🎨 **独特设计风格** - 工业实用主义 + 赛博微触感，拒绝千篇一律的 AI 审美
+- 🚀 **现代技术栈** - React 18 + Vite 5 + Framer Motion + Tailwind CSS
+- 📊 **丰富组件** - Toast、Modal、Skeleton、Charts 等完整组件库
+- 🎭 **流畅动画** - 基于 Framer Motion 的精心设计动画效果
+- 📱 **响应式设计** - 适配各种屏幕尺寸
+- ⚡ **极速构建** - Vite HMR 毫秒级热更新
+- 🤖 **AI 辅助开发** - 集成 frontend-design skill，提升开发效率
+
+## 🤖 Claude Skills 使用
+
+本项目配置了自定义 `frontend-design` Skill，让 AI 辅助创建高质量、独特的前端界面。
+
+### frontend-design Skill
+
+**用途**: 创建高质量、独特的前端界面
+
+**触发方式**: 当你需要构建网页组件、页面、仪表盘、React 组件、HTML/CSS 布局或任何 Web UI 时
+
+**示例**:
+```
+"使用 frontend design skill 创建一个深色主题的数据可视化面板"
+"帮我设计一个登录页面，使用工业风格"
+"创建一个响应式的卡片组件列表"
+```
+
+**特点**:
+- ✅ 避免千篇一律的 AI 生成风格（如紫色渐变、Inter 字体）
+- ✅ 精心设计的字体、色彩和动画
+- ✅ 每次设计都有独特的视觉方向
+- ✅ 生产级代码质量
+
+**配置位置**: `.claude/skills/frontend-design/SKILL.md`
+
+### 设计思考流程
+
+在使用 frontend-design skill 时，AI 会遵循以下流程：
+
+1. **理解上下文** - 明确目的、受众和技术约束
+2. **选择美学方向** - 极简、极繁、复古未来、工业风等
+3. **执行设计** - 生成完整功能代码
+4. **细节打磨** - 字体、色彩、动画、空间构图
+
 ## 设计理念
 
 **美学方向：工业实用主义 + 赛博微触感**
