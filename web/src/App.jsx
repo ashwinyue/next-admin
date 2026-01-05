@@ -7,17 +7,20 @@ import Documents from './pages/Documents'
 import Settings from './pages/Settings'
 import NotFound from './pages/NotFound'
 
+// 获取 basename 用于 GitHub Pages 部署
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '')
+
 function App() {
   return (
-    <Routes>
+    <Routes basename={basename}>
       <Route path="/" element={<MainLayout />}>
-        <Route index element={<Navigate to="/dashboard" replace />} />
+        <Route index element={<Dashboard />} />
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="issues" element={<Issues />} />
         <Route path="issues/:id" element={<IssueDetail />} />
         <Route path="documents" element={<Documents />} />
         <Route path="settings" element={<Settings />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>
   )
